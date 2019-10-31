@@ -1,0 +1,146 @@
+@media only screen and (max-width: 600px) {
+
+    body{
+        width: 100%;
+    }
+
+    #header{
+        background-size: cover;
+    }
+
+    .header-text-div{
+        padding: 30% 5% 5% 5% ;
+    }
+
+    .header-text-div h1{
+        font-size: 5em;
+    }
+
+    .header-text-div h2{
+        font-size: 2em;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #solution{
+        display: inline;
+    }
+
+    .solution-image-div{
+        width: 90% ;
+    }
+
+    .solution-text-div{
+        width: 80% ;
+        margin: 10% auto ;
+    }
+
+    .why-text-div{
+        display: inline ;
+    }
+
+    .why-img-div{
+        width: 40% ;
+        margin: 10% auto;
+    }
+
+    .plus-div{
+        display: none;
+    }
+
+    .why-text-div p{
+        width: 80% !important;
+        margin: 10% auto ;
+    }
+
+    .afterImg{
+        display: flex ;
+        flex-direction: column-reverse ;
+    }
+
+    #about{
+        display: inline ;
+    }
+
+    .about-text-div{
+        width: 80% ;
+        margin: 10% auto ;
+
+    }
+
+    .about-img-div{
+        display: none;
+    }
+
+    #important{
+        flex-direction: column ;
+    }
+
+    .important-text-container{
+        width: 90%;
+    }
+
+    .important-text-container h3{
+        font-size: 1.8em ;
+    }
+
+    .important-text-div{
+        width: 90%;
+        margin: 10% auto;
+
+    }
+
+    .important-text-div div{
+        flex-direction: column ;
+        margin-bottom: 10%;
+    }
+
+    .important-text-div div p{
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .important-img-container{
+        margin: 8% auto !important;
+        width: 60%;
+    }
+
+    .carousel-text-div a p{
+        font-size: 0.9em;
+    }
+
+    .contact-div{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact-div div{
+        width: 50%;
+        margin-top: 8%;
+    }
+
+    .contact-div div:last-child{
+        margin: 10% auto;
+    }
+
+    .contact-div div h3, .contact-div div h4{
+        font-size: 1em;
+    }
+
+    .launches-text{
+        font-size: 0.8em;
+    }
+
+    .copyright-text{
+        font-size: 0.8em;
+    }
+
+    .back-to-top{
+        font-size: 3em;
+        left: 85%;
+    }
+
+
+}

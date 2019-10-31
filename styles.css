@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600&display=swap');
 
+
 *{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
 }
 
 .flex-container{
@@ -34,6 +39,10 @@ h2{
     border-radius: 25%;
 }
 
+.bigger-p{
+    font-size: 1.2em;
+}
+
 #header{
     margin: 0;
     background-image: url("./images/background.png");
@@ -47,17 +56,35 @@ nav{
     padding: 3%;
 }
 
-ul{
+.navbar{
     margin: 0 auto;
-    padding: 2%;
-    width: 70%;
+    padding: 1%;
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgb(255, 255, 255, 0.2);
     border-radius: 5%;
 }
 
+.nav-img-div{
+    width: 6%;
+    margin: auto 0;
+}
+
+.nav-img-div img{
+    width: 100%;
+}
+
+
+ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
 li{
+    padding: 2% 0;
     color: white;
     list-style: none;
 }
@@ -66,8 +93,14 @@ ul img{
     width: 6%;
 }
 
-li img{
-    width: 10%;
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    color: rgb(209, 115, 39);
+
 }
 
 .header-text-div h1{
@@ -82,10 +115,15 @@ li img{
     text-align: center;
 }
 
-.header-text-div h3{
+.header-text-div a h3{
     margin: 4%;
     color: white;
     text-align: center;
+}
+
+.header-text-div a{
+    text-decoration: none;
+    color: white;
 }
 
 .header-text-div{
@@ -137,7 +175,8 @@ li img{
 }
 
 .why-img-div{
-    width: 12%;
+    width: 10%;
+    padding-top: 3%;
 }
 
 .why-text-div div img{
@@ -148,6 +187,10 @@ li img{
     margin: 5%;
     width: 30%;
 }
+
+/* .why-scooter{
+    width: 15%;
+} */
 
 .plus-div{
     margin: 5%;
@@ -177,7 +220,7 @@ li img{
 }
 
 .about-text-div{
-    margin: 5% 15%;
+    margin: 12% 15%;
     width: 30%;
 }
 
@@ -185,8 +228,13 @@ li img{
     text-align: center;
 }
 
+.about-img-div img{
+    width: 100%;
+}
+
 .about-img-div{
-    margin: 5% 0;
+    width: 45%;
+    margin: 8% 0;
 }
 
 #important{
@@ -194,9 +242,13 @@ li img{
     padding: 5%;
 }
 
+.flex-container-important{
+    display: flex;
+}
+
 .important-text-container{
     margin: auto 5%;
-    width: 30%;
+    width: 40%;
 }
 
 .important-text-container h3{
@@ -206,41 +258,139 @@ li img{
 }
 
 .important-text{
-    font-size: 1.5em;
+    font-size: 1.9em;
+}
+
+.important-text-div{
+    width: 50%;
 }
 
 .important-text-div div{
     align-content: center;
+    margin: 3%
 }
 
 .important-text-div div p {
-    margin: 3%;
+    margin: auto 3%;
     color: white;
-    font-size: 1.5em
+    font-size: 1.5em;
 }
 
-.important-text-div div img{
-    width: 8%;
+.important-img-container{
+    width: 15%;
     margin: 2%;
+}
+
+.important-img-container img{
+    width: 100%;
+}
+
+.lightening{
+    padding-left: 10%;
+    width: 70%;
 }
 
 #news{
     width: 100%;
 }
 
-.news-container{
-    margin: 0 5%;
+.carousel{
+    position: relative;
+    width: 80%;
+    margin: 5% auto;
+}
+
+.item-wraper{
+    margin: 3%;
+    padding: 1%;
+    padding-bottom: 5%;
+    overflow: hidden;
+}
+
+.next{
+    position: absolute;
+    top: 40%;
+    right: -5%;
+    font-size: 2.5em;
+    color: rgb(209, 115, 39);
+}
+
+.prev{
+    position: absolute;
+    top: 40%;
+    left: -5%;
+    font-size: 2.5em;
+    color: rgb(209, 115, 39);
+}
+
+.carousel-item{ 
+    display: inline-block;
+    margin: 0 10px;
+    width: 30%;
+    border-radius: 3%;
+    /* border: 1px solid  lightgray; */
+    background-color: rgb(156, 146, 146, 0.3) !important;
+    box-shadow: 2px 2px 7px grey;
+}
+
+.carousel-img-div{
+    margin: 5% auto;
     width: 80%;
 }
 
-.news-container img{
-    margin: 5%;
-    width: 50%;
+.carousel-text-div{
+    padding: 4%;
+}
+
+.carousel-text-div a{
+    color: black;
+}
+
+.carousel-img-div img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	
+	margin: 0 auto;
+	padding: 1rem 0;
+	
+    list-style-type: none;
+}
+	
+.slick-dots li {
+    margin: 0 0.25rem;
+}
+
+.slick-dots button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+    
+    border: none;
+    border-radius: 100%;
+    background-color: rgb(65, 65, 65, 0.2);
+    
+    text-indent: -9999px;
+}
+
+.slick-dots li.slick-active button {
+    background-color: rgb(65, 65, 65, 0.8);
+}
+
+.news-text{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bolder;
 }
 
 #contact{
     background-color:  #343E47;
-    padding: 3%;
+    padding: 3% 3% 0 3%;
 }
 
 .contact-div{
@@ -277,15 +427,33 @@ li img{
 
 .orange-text{
     color: rgb(209, 115, 39);
+    font-size: 1.3em
 }
 
-footer{
-    margin: 0;
-    background-color: darkgray;
+.email-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-footer p{
-    text-align: center;
-    margin: 0;
-    padding: 2%;
+.email-div a{
+    width: 8%;
+}
+
+.email-div a img{
+    width: 100%;
+}
+
+.copyright-text{
+    margin: 3% 0 0 0 !important;
+    color: rgb(151, 150, 150) !important;
+}
+
+.back-to-top{
+    font-size: 4em;
+    position: fixed;
+    bottom: 2%;
+    left: 95%;
+    color: lightgray;
+    opacity: 0.7;
 }

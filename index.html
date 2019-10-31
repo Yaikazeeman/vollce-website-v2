@@ -5,25 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="./mobileStyle.css">
+    <script src="https://kit.fontawesome.com/f527014ed9.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151270009-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-151270009-1');
+    </script>
+
     <title>Document</title>
 </head>
 <body>
     <section id="header">
         <nav>
-            <ul>
-                <img src="images/Logo white.png"/>
-                <li>Home</li>
-                <li>Solution</li>
-                <li>Why</li>
-                <li>About</li>
-                <li>Contact</li>
-                <img src="images/mail-img.png"/>
-            </ul>
+            <div class="navbar">
+                <div class="nav-img-div">
+                    <img src="images/Logo white.png"/>
+                </div>
+                 <ul>
+                    <li><a href="#solution">Solution</a></li>
+                    <li><a href="#why">Why</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-img-div">
+                    <a href="mailto:nathan@vollce.com" >
+                    <img src="images/mail-img.png"/></a>
+                </div>
+            </div>
         </nav>
         <div class="header-text-div">
             <h1>Vollce</h1>
             <h2>Born to empower scooters</h2>
-            <h3>Contact us for more info <span class="orange-text">></span></h3>
+            <a href="mailto:nathan@vollce.com"><h3>Contact us for more info <span class="orange-text">></span></h3></a>
         </div>
     </section>
     <section id="solution" class="flex-container">
@@ -33,10 +53,10 @@
         <div class="solution-text-div">
             <h2>Solution</h2>
             <span class="line"></span>
-            <p>
-                This is Vollce V1, by far the most sustainable solution for mobility in our fastly changing society. the Vollce V1 is developed following high Dutch quality standards.
+            <p class="bigger-p">
+                This is Vollce™ V1, by far the most sustainable solution for mobility in our fastly changing society. the Vollce™ V1 is developed following high Dutch quality standards.
             </p>
-            <p>
+            <p class="bigger-p">
                 This ensures a state of the art and durable product. Nevertheless, our V1 is the most affordable product in the current market. We enable future customers to choose a serious sustainable alternative
             </p>
         </div>
@@ -63,14 +83,14 @@
         </div>
         <div class="why-text-div flex-container">
             <div class="why-img-div">
-                <img src="images/Closed loop white.png"/>
+                <img src="images/thumbnail_services.png"/>
             </div>
             <div class="plus-div">
                 <div class="line-h"></div>
                 <div class="line-v"></div>
             </div>
             <p>
-                The Vollce V1 helps reducing the
+                The Vollce V1™ helps reducing the
                 ecological footprint current
                 scooters are responsible for. By
                 taking responsibility and driving
@@ -79,10 +99,10 @@
                 clean matter. 
             </p>
         </div>
-        <div class="why-text-div flex-container">
+        <div class="why-text-div afterImg flex-container">
             <p>
-                Due to environmental require-
-                ments a lot of scooters are not
+                Due to environmental requirements 
+                a lot of scooters are not
                 allowed in the city of Amsterdam
                 and Utrecht. These requirements
                 are becoming more strict and more
@@ -96,21 +116,19 @@
                 <div class="line-h"></div>
                 <div class="line-v"></div>
             </div>
-            <div class="why-img-div">
-                <img src="images/Scooter Vollce-kit.svg"/>
+            <div class="why-img-div why-scooter">
+                <img src="images/scooter-killie.png"/>
             </div>
 
         </div>
-        <div class="why-text-div flex-container">
+        <div class="why-text-div afterImg flex-container">
             <p>
-                The Vollce V1 is completely recycla-
-                ble and sustainable. No need to sell
+                The Vollce™ V1 is completely recyclable and sustainable. No need to sell
                 your petrol scooter in order to get
                 an electric one. Vollce believes in
                 an affordable, sustainable and easy
                 implementable solution. Besides,
-                the V1 has by far the smallest foot-
-                print in the entire electromobility
+                the V1 has by far the smallest footprint in the entire electromobility
                 industry.
             </p>
             <div class="plus-div">
@@ -118,21 +136,19 @@
                 <div class="line-v"></div>
             </div>
             <div class="why-img-div">
-                <img src="images/Closed loop white.png"/>
+                <img src="images/thumbnail_leaf.png"/>
             </div>
         </div>
     </section>
     <section id="about" class="flex-container">
         <div class="about-text-div">
-            <h2>About</h2>
+            <h2>About us</h2>
             <span class="line"></span>
-            <p>
-                VollceTM is an innovative electric mo-
-                bility company based in Amsterdam.
+            <p class="bigger-p">
+                Vollce™ is an innovative electric mobility company based in Amsterdam.
                 It is our ambition to create resourceful
                 products that reinforce the current
-                market. Our first product will be in-
-                troduced in Q1 2020. Founded in 2019,
+                market. Our first product will be introduced in Q1 2020. Founded in 2019,
                 based in Amsterdam.
             </p>
         </div>
@@ -140,22 +156,30 @@
             <img src="./images/Vollce-v1-proto-knip.png">
         </div>
     </section>
-    <section id="important" class="flex-container">
+    <section id="important" class="flex-container-important">
         <div class="important-text-container">
-            <h3>What we believe <br> is <span class="important-text">important</span></h3>
+            <h3>What we believe is <span class="important-text">important</span></h3>
             <span class="line"></span>
         </div>
         <div class="important-text-div">
             <div class="flex-container">
-                <img src="images/Closed loop white.png"/>
+                <div class="important-img-container">
+                    <img src="images/Closed loop white.png"/>
+                </div>
                 <p>The principles of the Vollce V1 are <br/> entirely close-loop circular</p>
             </div>
             <div class="flex-container">
-                <img src="images/Closed loop white.png"/>
+                <div class="important-img-container">
+                    <div class="lightening">
+                        <img src="images/thumbnail_Lightening white.png"/>
+                    </div>
+                </div>
                 <p>Our products are <br/> 100% electric</p>
             </div>
             <div class="flex-container">
-                <img src="images/Closed loop white.png"/>
+                <div class="important-img-container">
+                    <img src="images/thumbnail_Batterij.png"/>
+                </div>
                 <p>Our batteries have a lifespan <br/> of aprox. 20 to 25 years</p>
             </div>
         </div>
@@ -163,9 +187,50 @@
     <section id="news">
         <h2>News</h2>
         <span class="line"></span>
-        <div class="news-container flex-container">
-            <img src="images/vespa-news.jpg"/>
-            <img src="images/scooters-city.jpg"/>
+
+        <div class="carousel">
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+            <div class="item-wraper">
+                <div class="carousel-item">
+                <div class="carousel-img-div">
+                    <a href="https://www.nu.nl/amsterdam/5229119/bijna-3000-waarschuwingen-scooters-in-milieuzone.html" target="_blank">
+                        <img src="images/news-vespa.jpg" alt="news-slider-1">
+                    </a>
+                </div>
+                <div class="carousel-text-div">
+                    <a href="https://www.nu.nl/amsterdam/5229119/bijna-3000-waarschuwingen-scooters-in-milieuzone.html" target="_blank">
+                        <p class="news-text">Bijna 3000 waarschuwingen voor scooters in milieuzone.</p>
+                    </a>
+                </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img-div">
+                        <a href="https://www.parool.nl/nieuws/de-elektrische-scooter-wordt-steeds-populairder~bc4edddb/" target="_blank">
+                            <img src="images/news-deelscooter.jpg" alt="news-slider-2">
+                        </a>
+                </div>
+                <div class="carousel-text-div">
+                    <a  href="https://www.parool.nl/nieuws/de-elektrische-scooter-wordt-steeds-populairder~bc4edddb/" target="_blank">
+                    <p class="news-text">De elektrische scooter wordt steeds populairder.</p>
+                    </a>
+                </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img-div">
+                        <a href="https://www.volkskrant.nl/nieuws-achtergrond/elektrische-deelsteps-veroorzaken-verkeersongelukken-in-europese-hoofdsteden~b3a34190/?referer=https%3A%2F%2Fwww.google.com%2F" target="_blank">
+                            <img src="images/news-step.jpg" alt="news-slider-3">
+                        </a>
+                </div>
+                <div class="carousel-text-div">
+                    <a  href="https://www.volkskrant.nl/nieuws-achtergrond/elektrische-deelsteps-veroorzaken-verkeersongelukken-in-europese-hoofdsteden~b3a34190/?referer=https%3A%2F%2Fwww.google.com%2F" target="_blank">
+                    <p class="news-text">Elektrische deelsteps veroorzaken verkeersongelukken.</p>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+
         </div>
     </section>
     <section id="contact">
@@ -174,14 +239,14 @@
             <span class="line"></span>
             <div class="contact-div flex-container">
                 <div>
-                    <img src="images/profiel-nathan.jpg">
+                    <img src="images/profiel-nathan.png">
                     <h3>Nathan Gutz</h3>
-                    <h4>Co-founder</h4>
+                    <h4>CEO <br/> Co-founder</h4>
                 </div>
                  <div>
                     <img src="images/profiel-dorus.jpg">
                     <h3>Dorus Groen</h3>
-                    <h4>Co-founder</h4>
+                    <h4>CTO <br/> Co-founder</h4>
                 </div>
                 <div>
                     <img src="images/profiel-yaika.jpg">
@@ -196,13 +261,24 @@
                 <div>
                     <img src="images/profiel-wouter(2).jpg">
                     <h3>Wouter Neyendorff</h3>
-                    <h4>Business Advisor/<br/> Saas Entrepeneur</h4>
+                    <h4>Tactics &<br/> Platform development</h4>
                 </div>
             </div>
-            <p><strong>Subscribe to our newsletter and be the first to know when our product <span class="orange-text">launches</span></strong></p>
+            <p>Get in touch: </p>
+            <div class="email-div">
+                <a href="mailto:nathan@vollce.com" >
+                <img src="images/mail-img.png"/></a>
+            </div>
+            <p class="copyright-text">© Vollce International. All rights reserved.</p>
         </section>
-        <footer>
-            <p>© Vollce International. All rights reserved.</p>
-        </footer>
-</body>
+
+        <a href="#header">
+            <!-- <i class="fas fa-chevron-circle-up back-to-top"></i> -->
+            <i class="fas fa-angle-up  back-to-top"></i>
+        </a>
+       
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
