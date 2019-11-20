@@ -107,8 +107,12 @@
         width: 60%;
     }
 
+    .carousel-item{
+        height: 300px;
+    }
+
     .carousel-text-div a p{
-        font-size: 0.9em;
+        font-size: 1.2em;
     }
 
     .contact-div{

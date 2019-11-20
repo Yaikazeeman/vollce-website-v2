@@ -328,14 +328,9 @@ li a:hover{
     margin: 0 10px;
     width: 30%;
     border-radius: 3%;
-    /* border: 1px solid  lightgray; */
-    background-color: rgb(156, 146, 146, 0.3) !important;
+    height: 450px;
     box-shadow: 2px 2px 7px grey;
-}
-
-.carousel-img-div{
-    margin: 5% auto;
-    width: 80%;
+    box-shadow: inset 0px 0px 200px rgba(0,0,0,0.9);
 }
 
 .carousel-text-div{
@@ -344,11 +339,6 @@ li a:hover{
 
 .carousel-text-div a{
     color: black;
-}
-
-.carousel-img-div img{
-    width: 100%;
-    object-fit: cover;
 }
 
 .slick-dots {
@@ -363,6 +353,7 @@ li a:hover{
 	
 .slick-dots li {
     margin: 0 0.25rem;
+
 }
 
 .slick-dots button {
@@ -382,9 +373,14 @@ li a:hover{
     background-color: rgb(65, 65, 65, 0.8);
 }
 
+.news-orange-text{
+    color: orange; 
+    margin: 0;
+}
+
 .news-text{
-    text-align: center;
     font-size: 1.3em;
+    color: white;
     font-weight: bolder;
 }
 
@@ -437,7 +433,7 @@ li a:hover{
 }
 
 .email-div a{
-    width: 8%;
+    width: 4%;
 }
 
 .email-div a img{
