@@ -274,6 +274,9 @@ li a:hover{
 .about-text-div{
     margin: 12% 15%;
     width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .about-text-div p{
@@ -287,6 +290,9 @@ li a:hover{
 .about-img-div{
     width: 45%;
     margin: 8% 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #important{
@@ -315,6 +321,9 @@ li a:hover{
 
 .important-text-div{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .important-text-div div{
