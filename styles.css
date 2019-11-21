@@ -18,6 +18,29 @@ a{
 
 body{
     margin: 0;
+    overflow: hidden;
+    
+}
+
+.container{
+    height: 100vh;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    overflow-y: scroll;
+}
+
+section{
+    scroll-snap-align: start none;
+    height: 100vh;
+}
+
+#news{
+    height: auto;
+}
+
+#why{
+    height: auto;
 }
 
 h1{
@@ -175,7 +198,7 @@ li a:hover{
 }
 
 .solution-text-div p {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .solution-image-div img{
@@ -254,7 +277,7 @@ li a:hover{
 }
 
 .about-text-div p{
-    text-align: center;
+    /* text-align: center; */
 }
 
 .about-img-div img{

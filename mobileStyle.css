@@ -4,6 +4,17 @@
         width: 100%;
     }
 
+    .container{
+        scroll-snap-type: none;
+        scroll-snap-type: none;
+        scroll-snap-points-y: none;
+    }
+
+    section{
+        scroll-snap-align: none;
+        height: auto;
+    }
+
     #header{
         background-size: cover;
     }
