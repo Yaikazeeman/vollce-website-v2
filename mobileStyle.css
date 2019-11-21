@@ -20,6 +20,14 @@
         font-size: 2em;
     }
 
+    .div-contact-button{
+        margin-top: 30%;
+    }
+
+    .div-contact-button a{
+        width: 80%;
+    }
+
     nav{
         display: none;
     }
@@ -129,12 +137,20 @@
         margin: 10% auto;
     }
 
-    .contact-div div h3, .contact-div div h4{
+    .contact-div div h3 {
         font-size: 1em;
+    }
+
+    .contact-div div h4{
+        font-size: 0.8em;
     }
 
     .launches-text{
         font-size: 0.8em;
+    }
+
+    .email-div a{
+        width: 15%;
     }
 
     .copyright-text{

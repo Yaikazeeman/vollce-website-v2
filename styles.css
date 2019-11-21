@@ -5,6 +5,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -63,7 +64,7 @@ nav{
     display: flex;
     justify-content: space-between;
     background-color: rgb(255, 255, 255, 0.2);
-    border-radius: 5%;
+    border-radius: 15px;
 }
 
 .nav-img-div{
@@ -99,7 +100,7 @@ li a{
 }
 
 li a:hover{
-    color: rgb(209, 115, 39);
+    font-weight: bolder;
 
 }
 
@@ -124,6 +125,34 @@ li a:hover{
 .header-text-div a{
     text-decoration: none;
     color: white;
+}
+
+.div-contact-button{
+    margin: 2%;
+    width: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.div-contact-button a{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.header-contact-button{
+    width: 100%;
+    padding: 4%;
+    font-weight: bold;
+    border-radius: 25px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.header-contact-button:hover{
+    background-color: white;
+    color: #343E47;
 }
 
 .header-text-div{
@@ -291,6 +320,7 @@ li a:hover{
 }
 
 #news{
+    padding-top: 4%;
     width: 100%;
 }
 
@@ -416,7 +446,14 @@ li a:hover{
     text-align: center;
 }
 
-.contact-div div h3, .contact-div div h4{
+.contact-div div h3 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.contact-div div h4{
     color: white;
     text-align: center;
 }
