@@ -56,27 +56,32 @@
         margin: 10% auto ;
     }
 
-    .why-text-div{
-        display: inline ;
+    #why{
+        height: auto;
     }
 
-    .why-img-div{
-        width: 40% ;
-        margin: 10% auto;
+    .new-why-item{
+        width: 80%;
+        display: block;
+        padding: 5%;
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .plus-div{
-        display: none;
+    .new-why-img-div{
+        width: 30%;
+
     }
 
-    .why-text-div p{
-        width: 80% !important;
-        margin: 10% auto ;
+    .new-why-text{
+        width: 100%;
+      
     }
 
-    .afterImg{
-        display: flex ;
-        flex-direction: column-reverse ;
+    .new-why-end-text{
+        text-align: center;
     }
 
     #about{

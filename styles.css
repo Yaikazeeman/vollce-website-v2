@@ -39,10 +39,6 @@ section{
     height: auto;
 }
 
-#why{
-    height: auto;
-}
-
 h1{
     font-size: 9em;
     font-family:'Montserrat', sans-serif;
@@ -197,73 +193,60 @@ li a:hover{
     margin: auto 15%;
 }
 
-.solution-text-div p {
-    /* text-align: center; */
-}
-
 .solution-image-div img{
     width: 100%;
 }
 
 #why{
-    background-color: #343E47;
+    background-image: url("./images/background.png");
+    background-size: cover;
+    background-attachment: fixed;
     padding: 5%;
     width: 100%;
+    height: 100vh;
 }
 
 #why h2{
     color: white;
 }
 
-
-#why div p{
-    color: white;
-    width: 35%;
-}
-
-.why-text-div{
+.new-why-container{
+    display: flex;
     justify-content: center;
-    align-content: center;
+    flex-wrap: wrap;
 }
 
-.why-img-div{
-    width: 10%;
-    padding-top: 3%;
+.new-why-item{
+    display: flex;
+    width: 40%;
+    margin: 2%;
+    padding: 1%;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 15px;
 }
 
-.why-text-div div img{
-    width: 100%;
-}
-
-.why-text-div p{
-    margin: 5%;
-    width: 30%;
-}
-
-/* .why-scooter{
+.new-why-img-div{
     width: 15%;
-} */
-
-.plus-div{
     margin: 5%;
-    width: 80px;
-    height: 80px;
 }
 
-.line-h{
-    position: relative;
-    top: 50%;
-    background-color: rgb(209, 115, 39);
+.new-why-img-div img{
     width: 100%;
-    height: 2px;
 }
 
-.line-v{
-    position: relative;
-    left: 50%;
-    background-color: rgb(209, 115, 39);
-    width: 2px;
-    height: 100%;
+.new-why-text{
+    color: white;
+    width: 70%;
+}
+
+.new-why-end-text{
+    font-size: 1.5em;
+    color: white;
+}
+
+.orange{
+    font-weight: bold;
+    color: rgb(209, 115, 39);
 }
 
 #about{
@@ -279,9 +262,6 @@ li a:hover{
     flex-direction: column;
 }
 
-.about-text-div p{
-    /* text-align: center; */
-}
 
 .about-img-div img{
     width: 100%;
