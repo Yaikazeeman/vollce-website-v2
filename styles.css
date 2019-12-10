@@ -262,7 +262,6 @@ li a:hover{
     flex-direction: column;
 }
 
-
 .about-img-div img{
     width: 100%;
 }
@@ -370,7 +369,7 @@ li a:hover{
     margin: 0 10px;
     width: 30%;
     border-radius: 3%;
-    height: 450px;
+    height: 350px;
     box-shadow: 2px 2px 7px grey;
     box-shadow: inset 0px 0px 200px rgba(0,0,0,0.9);
 }
