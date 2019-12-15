@@ -17,6 +17,7 @@
 
     #header{
         background-size: cover;
+        background-attachment: scroll;
     }
 
     .header-text-div{
@@ -58,6 +59,7 @@
 
     #why{
         height: auto;
+        background-attachment: scroll;
     }
 
     .new-why-item{
