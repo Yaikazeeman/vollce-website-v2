@@ -15,7 +15,12 @@
         height: auto;
     }
 
+    #myVideo{
+        display: none;
+    }
+
     #header{
+        background-image: url("./images/background.png");
         background-size: cover;
         background-attachment: scroll;
     }
@@ -45,6 +50,7 @@
     }
 
     #solution{
+        background-color: white;
         display: inline;
     }
 
@@ -131,6 +137,11 @@
     .important-img-container{
         margin: 8% auto !important;
         width: 60%;
+    }
+
+
+    #news{
+        background-color: white;
     }
 
     .carousel-item{
