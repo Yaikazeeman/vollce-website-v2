@@ -208,6 +208,25 @@ li a:hover{
     width: 100%;
 }
 
+.patents-container{
+    margin-top: 3em;
+    justify-content: center;
+}
+
+.patents-img-div{
+    width: 8%;
+}
+
+.patents-img-div img{
+    width: 100%;
+}
+
+.patents-text{
+    margin: 0;
+    text-align: center;
+    font-size: 0.7em;
+}
+
 #why{
     background-color: #343E47;
     background-image: url("./images/background.png");

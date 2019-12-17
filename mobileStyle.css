@@ -63,6 +63,14 @@
         margin: 10% auto ;
     }
 
+    .patents-img-div{
+        width: 10%;
+    }
+
+    .patents-text{
+        font-size: 0.8em;
+    }
+
     #why{
         height: auto;
         background-attachment: scroll;
